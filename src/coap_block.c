@@ -108,7 +108,8 @@ coap_get_block_b(const coap_session_t *session, const coap_pdu_t *pdu,
 }
 
 int
-coap_get_block(const coap_pdu_t *pdu, coap_option_num_t number,
+//coap_get_block(const coap_pdu_t *pdu, coap_option_num_t number,
+coap_get_block_xx(const coap_pdu_t *pdu, coap_option_num_t number,
                coap_block_t *block) {
   coap_block_b_t block_b;
 
@@ -288,7 +289,8 @@ coap_add_data_blocked_response(const coap_pdu_t *request,
    * correct options are put into the PDU.
    */
   if (request) {
-    if (coap_get_block(request, COAP_OPTION_BLOCK2, &block2)) {
+    //if (coap_get_block(request, COAP_OPTION_BLOCK2, &block2)) {
+    if (coap_get_block_xx(request, COAP_OPTION_BLOCK2, &block2)) {
       block2_requested = 1;
       if (block2.num != 0 && length <= (block2.num << (block2.szx + 4))) {
         coap_log_debug("Illegal block requested (%d > last = %zu)\n",

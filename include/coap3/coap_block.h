@@ -153,7 +153,8 @@ coap_opt_block_set_m(coap_opt_t *block_opt, int m) {
  *
  * @return       @c 1 on success, @c 0 otherwise.
  */
-int coap_get_block(const coap_pdu_t *pdu, coap_option_num_t number,
+//int coap_get_block(const coap_pdu_t *pdu, coap_option_num_t number,
+int coap_get_block_xx(const coap_pdu_t *pdu, coap_option_num_t number,
                    coap_block_t *block);
 
 
