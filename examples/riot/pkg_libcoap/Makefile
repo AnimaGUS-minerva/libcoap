@@ -1,6 +1,6 @@
 PKG_NAME=libcoap
 PKG_URL=https://github.com/AnimaGUS-minerva/libcoap
-PKG_VERSION=8e8f9f5368b563ca874e822d7d06b126d64e0fff
+PKG_VERSION=6522cf4d4fbb041ecacf4a10a7fff28cd0a18512
 PKG_LICENSE=BSD-2-Clause
 
 #@@#LIBCOAP_BUILD_DIR=$(BINDIR)/pkg/$(PKG_NAME)
